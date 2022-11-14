@@ -1,0 +1,5 @@
+# Created at 2022-11-14T12:10:47.295
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Automation Projects\Percy\Percy_java_code\percy-pdf\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

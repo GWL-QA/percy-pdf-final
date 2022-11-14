@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-14T12:16:29 IST" name="Suite" finished-at="2022-11-14T12:17:04 IST" duration-ms="34906">
+    <groups>
+    </groups>
+    <test started-at="2022-11-14T12:16:29 IST" name="Test" finished-at="2022-11-14T12:17:04 IST" duration-ms="34906">
+      <class name="Sample.Percy_Sample_Project.App">
+        <test-method is-config="true" signature="testing()[pri:0, instance:Sample.Percy_Sample_Project.App@2c35e847]" started-at="2022-11-14T12:16:29 IST" name="testing" finished-at="2022-11-14T12:16:39 IST" duration-ms="10066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method signature="test()[pri:0, instance:Sample.Percy_Sample_Project.App@2c35e847]" started-at="2022-11-14T12:16:39 IST" name="test" finished-at="2022-11-14T12:17:04 IST" duration-ms="24790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Sample.Percy_Sample_Project.App -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
