@@ -94,7 +94,7 @@ public class App
 		     WebElement element1 = driver.findElement(By.xpath("//div[contains(@class,'canvasWrapper')]"));
 	             js.executeScript("arguments[0].setAttribute('style', 'height: 259px; width: 339px; ')", element1);
 			 
-		     pp.snapshot("1-page", Arrays.asList(1600,375,834));
+		     pp.snapshot("Home", Arrays.asList(1600,375,834));
 //			 pp.snapshot(TEST_URL,Arrays.asList(375, 480, 720, 1280, 1440, 1920), null, false, "div#main-content, div.element.style {overflow: visible !important}");
 //			 pp.snapshot("Home Page",Arrays.asList(375, 480, 720, 1280, 1440, 1920));
 //			 pp.snapshot("Home Page",Arrays.asList(375, 480, 720, 1280, 1440, 1920), null, false, "div#main-content, div.element.style{overflow: visible !important}");
