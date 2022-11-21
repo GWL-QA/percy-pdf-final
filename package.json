@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "devDependencies": {
-        "@percy/cli": "^1.13.0",
+        "@percy/cli": "^1.14.0",
         "@percy/webdriverio": "^2.0.2",
         "@wdio/cli": "^7.24.0",
         "@wdio/local-runner": "^7.24.0",
