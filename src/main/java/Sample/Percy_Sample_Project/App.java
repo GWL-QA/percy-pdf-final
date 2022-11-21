@@ -17,13 +17,14 @@ import io.percy.selenium.Percy;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import com.sun.net.httpserver.HttpServer;
-
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 /**
  * Hello world!
  *
  */
-public class App extends http
+public class App 
 {
 	  public static WebDriver driver = null;
 	  public static Percy pp;
@@ -35,8 +36,8 @@ public class App extends http
 	  @BeforeClass
 	  public void testing() throws IOException
 	  {
-		  serverExecutor = Executors.newFixedThreadPool(1);
-	        server = App.startServer(serverExecutor);
+// 		  serverExecutor = Executors.newFixedThreadPool(1);
+// 	        server = App.startServer(serverExecutor);
 	        
 //////      
       ChromeOptions option = new ChromeOptions();
@@ -81,11 +82,17 @@ public class App extends http
 			 driver.get("https://dev-wev.pantheonsite.io/explore-entrepreneurship/");
 
 //			 driver.get("https://dev-wev.pantheonsite.io/wev-classes/");
-			 Thread.sleep(2000);
+// 			 Thread.sleep(2000);
 			 
-			 driver.findElement(By.id("wt-cli-accept-all-btn")).click();
-//			 
-			 Thread.sleep(2000);
+// 			 driver.findElement(By.id("wt-cli-accept-all-btn")).click();
+// //			 
+// 			 Thread.sleep(2000);
+		     
+		     JavascriptExecutor js = (JavascriptExecutor) driver;
+		     js.executeScript("var btn=document.createElement('div');" + "document.body.appendChild(btn);"+"btn.className='canvasWrapper'");
+
+		     WebElement element1 = driver.findElement(By.xpath("//div[contains(@class,'canvasWrapper')]"));
+	             js.executeScript("arguments[0].setAttribute('style', 'height: 259px; width: 339px; ')", element1);
 			 
 		     pp.snapshot("1-page", Arrays.asList(1600,375,834));
 //			 pp.snapshot(TEST_URL,Arrays.asList(375, 480, 720, 1280, 1440, 1920), null, false, "div#main-content, div.element.style {overflow: visible !important}");
