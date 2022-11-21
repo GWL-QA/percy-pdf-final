@@ -25,7 +25,7 @@ describe('Capture Spanshot', () => {
             if((i+1)%group_pages == 0 || i == num_of_pages-1){
                 console.log("on page "+i)
                 // percy css to ignore pages after the current group
-                await percySnapshot(i+1+'-page', { 
+                await percySnapshot("Home", { 
                     percyCSS: `.pdfViewer .page:nth-of-type(n+${group_pages+1}) { display: none; }` 
                   });
                 // delete the group for which spanshots are taken
